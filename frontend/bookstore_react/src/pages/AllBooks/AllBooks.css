@@ -1,0 +1,67 @@
+.all-books {
+  background-color: #fff;
+}
+.all-books .top-nav-sec {
+  background-color: #44A79B;
+  padding: 15px 0px;
+  color: #fff;
+  text-align: center;
+}
+.all-books .top-nav-sec h3 {
+  font-weight: 500 !important;
+  font-size: 25px;
+  line-height: 36px;
+}
+.all-books .top-nav-sec .path {
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.all-books .top-nav-sec .path a {
+  color: #fff;
+}
+.all-books .top-nav-sec .path a:hover {
+  text-decoration: underline !important;
+}
+.all-books .wrapper {
+  display: flex;
+  gap: 20px;
+}
+.all-books .wrapper .filter-wrapper {
+  min-width: 180px !important;
+}
+.all-books .wrapper .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+  color: #44A79B;
+}
+.all-books .wrapper .book-set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.section {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding: 30px 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 40px 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .section {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+}/*# sourceMappingURL=AllBooks.css.map */

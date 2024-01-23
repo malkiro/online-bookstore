@@ -1,0 +1,53 @@
+.footer .section {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .footer .section {
+    padding: 10px 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .section {
+    padding: 10px 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer .section {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+.footer .section .wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer .section .wrapper img {
+  width: 100px;
+}
+@media (max-width: 576px) {
+  .footer .section .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer .section .wrapper .right {
+  color: #000 !important;
+  font-size: 14px;
+  text-align: right;
+}
+@media (max-width: 576px) {
+  .footer .section .wrapper .right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer .section .wrapper .right a {
+  color: #000 !important;
+  font-size: 14px;
+}/*# sourceMappingURL=Footer.css.map */

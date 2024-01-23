@@ -1,0 +1,195 @@
+.homepage {
+    background-color: #fff;
+
+    .top-link {
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+        grid-column: span 2;
+            display: flex;
+            justify-content: center;
+            @media (min-width:768px) {
+                justify-content: flex-end;
+            }
+            
+
+            .explore-btn {
+                display: flex;
+                align-items: center;
+                height: 30px;
+                gap: 8px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #343434;
+
+                &:hover {
+                    color: #44A79B;
+                }
+
+                svg:hover {
+                    fill: #44A79B;
+                }
+            }
+
+            img {
+                width: 16px;
+                height: 16px;
+            }
+    }
+
+    .category-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        @media (min-width : 540px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @media (min-width : 768px) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @media (min-width : 1024px) {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        .category:nth-child(1),
+        .category:nth-child(4),
+        .category:nth-child(7) {
+            background-color: #99CAC4;
+
+            .image .img {
+                background-image: url('./images/icon1new.png');
+                width: 60px;
+                height: 60px;
+            }
+
+            &:hover {
+                background-color: #44A79B;
+            }
+        }
+
+
+
+        .category:nth-child(2),
+        .category:nth-child(5),
+        .category:nth-child(8) {
+            background-color: #DDC07C;
+            .image .img {
+                background-image: url('./images/icon2new.png');
+                width: 60px;
+                height: 60px;
+            }
+
+            &:hover {
+                background-color: #CC930B;
+            }
+        }
+
+        .category:nth-child(3),
+        .category:nth-child(6),
+        .category:nth-child(9) {
+            background-color: #A0A2A7;
+            .image .img {
+                background-image: url('./images/icon3new.png');
+                width: 60px;
+                height: 60px;
+            }
+
+            &:hover {
+                background-color: #2C303C;
+            }
+        }
+
+        .category {
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+
+            .image {
+                width: 60px;
+                height: 60px;
+            }
+
+            .name {
+                text-transform: capitalize;
+            }
+
+        }
+
+        .category .image .img {
+            transition: transform 0.5s;
+            /*Applythetransitiontothetransformproperty*/
+            width: 65px;
+            height: 65px;
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            -ms-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+        }
+
+        .category:hover .image .img {
+            transform: scale(1.08);
+        }
+
+    }
+
+    //common
+    .section {
+        padding: 20px;
+
+        @media (min-width:768px) {
+            padding: 30px 40px;
+        }
+
+        @media (min-width:1200px) {
+            padding: 40px 60px;
+        }
+
+        @media (min-width:1440px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 1280px;
+            margin: 0px auto;
+        }
+    }
+
+    .bgColor1 {
+        background-color: #FFFFFF;
+    }
+
+    .bgColor2 {
+        background-color: #F1FFFE;
+    }
+}
+
+section.hero-image {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+section.hero-image img {
+   width: 100%;
+   max-width: 1024px;
+   margin: 0px auto;
+}

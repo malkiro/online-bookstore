@@ -1,0 +1,76 @@
+.all-books {
+    background-color: #fff;
+
+    .top-nav-sec {
+        background-color: #44A79B;
+        padding: 15px 0px;
+        color: #fff;
+        text-align: center;
+
+        h3 {
+            font-weight: 500 !important;
+            font-size: 25px;
+            line-height: 36px;
+        }
+
+        .path {
+            font-size: 14px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+    }
+
+    .wrapper {
+        display: flex;
+        gap: 20px;
+
+        .filter-wrapper {
+            min-width: 180px !important;
+        }
+
+        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+            color: #44A79B;
+        }
+
+        .book-set {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            row-gap: 30px;
+            column-gap: 20px;
+        }
+    }
+}
+
+
+
+//common
+.section {
+    padding: 20px;
+
+    @media (min-width:768px) {
+        padding: 30px 40px;
+    }
+
+    @media (min-width:1200px) {
+        padding: 40px 60px;
+    }
+
+    @media (min-width:1440px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+}

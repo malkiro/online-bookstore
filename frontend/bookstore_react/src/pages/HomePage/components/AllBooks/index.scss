@@ -1,0 +1,89 @@
+.all-books-wrapper {
+    .border-wrapper {
+        border: 1px solid #ccc;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: #F1FFFE;
+
+        .heading-area {
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width:768px) {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+            }
+
+            .left {
+                grid-column: span 2;
+            }
+
+            .middle {
+                grid-column: span 4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                h5 {
+                    font-weight: 500;
+                    color: #44A79B;
+                    font-size: 14px;
+                    text-align: center;
+                }
+
+                h2 {
+                    font-weight: 500;
+                    color: #343434;
+                    font-size: 25px;
+                    line-height: 36px;
+                    border-bottom: 3px solid #44A79B;
+                    text-align: center;
+                }
+            }
+
+            .right {
+                grid-column: span 2;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+
+                @media (min-width:768px) {
+                    justify-content: flex-end;
+                    margin-top: 0px;
+                }
+
+                .explore-btn {
+                    display: flex;
+                    align-items: center;
+                    height: 30px;
+                    gap: 8px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #343434;
+
+                    &:hover {
+                        color: #44A79B;
+                    }
+
+                    svg:hover {
+                        fill: #44A79B;
+                    }
+                }
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+
+
+            }
+        }
+
+        .carousel_wrapper {
+            margin-top: 20px;
+        }
+
+    }
+}

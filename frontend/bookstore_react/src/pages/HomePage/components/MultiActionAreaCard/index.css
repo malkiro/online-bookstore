@@ -1,0 +1,25 @@
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+  margin: 3px;
+}
+
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.css-h93ljk-MuiTypography-root {
+  font-size: 15px;
+}
+
+.MuiCardContent-root.css-46bh2p-MuiCardContent-root {
+  padding: 10px 10px 0px;
+}
+
+.MuiCardActions-root.MuiCardActions-spacing.css-1t6e9jv-MuiCardActions-root {
+  padding: 0px;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: transparent !important;
+}
+
+@media (max-width: 540px) {
+  .MuiCardActions-root.MuiCardActions-spacing.css-1t6e9jv-MuiCardActions-root {
+    display: none;
+  }
+}/*# sourceMappingURL=index.css.map */

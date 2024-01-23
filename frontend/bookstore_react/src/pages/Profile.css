@@ -1,0 +1,109 @@
+.profile-page {
+  min-height: 70vh;
+  background-color: #fff;
+}
+.profile-page .top-nav-sec {
+  background-color: #44A79B;
+  padding: 15px 0px;
+  color: #fff;
+  text-align: center;
+}
+.profile-page .top-nav-sec h3 {
+  font-weight: 500 !important;
+  font-size: 25px;
+  line-height: 36px;
+}
+.profile-page .top-nav-sec .path {
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.profile-page .top-nav-sec .path a {
+  color: #fff;
+}
+.profile-page .top-nav-sec .path a:hover {
+  text-decoration: underline !important;
+}
+.profile-page .title {
+  color: #212529;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500px;
+  padding-bottom: 30px;
+  margin-bottom: 8px;
+}
+.profile-page .content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 50px;
+}
+@media (max-width: 1023px) {
+  .profile-page .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.profile-page .content-wrapper .left-wrapper .tab {
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #343434;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+}
+.profile-page .content-wrapper .left-wrapper .active {
+  background-color: #dbf6f1;
+}
+.profile-page .content-wrapper .right-wrapper .border-box {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 20px;
+  color: #343434;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .profile-page .content-wrapper .right-wrapper .border-box {
+    font-size: 14px;
+  }
+}
+.profile-page .content-wrapper .right-wrapper .border-box img {
+  width: 200px;
+  padding: 10px;
+}
+.profile-page .content-wrapper .right-wrapper .border-box label.form-label {
+  font-weight: 500;
+}
+.profile-page .content-wrapper .right-wrapper .border-box h2 {
+  margin-bottom: 15px;
+}
+.profile-page .section {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .profile-page .section {
+    padding: 30px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-page .section {
+    padding: 40px 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .profile-page .section {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+}/*# sourceMappingURL=Profile.css.map */

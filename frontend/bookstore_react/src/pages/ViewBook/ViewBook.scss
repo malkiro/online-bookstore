@@ -1,0 +1,462 @@
+.view-book {
+    background-color: #fff;
+
+    .path {
+        padding: 15px 20px;
+
+        a {
+            color: #212529 !important;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+
+
+        @media (min-width:768px) {
+            padding: 15px 40px;
+        }
+
+        @media (min-width:1200px) {
+            padding: 15px 60px;
+        }
+
+        @media (min-width:1440px) {
+            padding-left: 0px;
+            padding-right: 0px;
+            max-width: 1280px;
+            margin: 0px auto;
+        }
+
+        display: flex;
+        gap: 10px;
+        @media (max-width:580px) {
+            display: none !important;
+        }
+    }
+
+    .book-details-wrapper {
+        max-width: 960px;
+        margin: 0px auto;
+        padding-bottom: 120px;
+        display: block;
+
+        @media (max-width:1023px) {
+            display: none;
+        }
+
+        .book-details-wrapper-bg {
+            display: flex;
+            z-index: 0;
+
+
+
+            .image-wrapper {
+                margin-top: 20px;
+                z-index: 1;
+
+                img {
+                    width: 250px;
+                }
+            }
+
+            .book-details {
+                margin-top: 20px;
+                z-index: 0;
+                padding-left: 50px;
+                padding-right: 100px;
+
+                h1.title {
+                    color: #343434;
+                    font-size: 25px;
+                    line-height: 36px;
+                }
+
+                .bottom-border-line {
+                    border-top: 3px solid #44A79B;
+                    width: 100px;
+                }
+
+                .book-status {
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+
+                .old-price {
+                    color: #b5b5b5;
+                    text-decoration: line-through;
+                    font-weight: 600;
+                    font-size: 17px;
+                    line-height: 25px;
+                    margin-top: 10px;
+                }
+
+                .new-price {
+                    color: #44A79B;
+                    font-weight: 600;
+                    font-size: 25px;
+                    line-height: 38px;
+                    padding-bottom: 10px;
+                }
+
+                h6 {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #343434;
+                }
+
+                .details-line {
+                    font-size: 14px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+
+                    table {
+                        width: 100%;
+                    }
+
+                    td {
+                        vertical-align: top;
+                    }
+
+                    .left {
+                        font-weight: 700;
+                        color: #212529;
+                        width: 40%;
+                    }
+
+                    .right {
+                        font-weight: 400;
+                        color: #212529;
+                        width: 60%;
+                    }
+
+                    div.right {
+                        width: 100% !important;
+                    }
+
+                }
+
+                .btn-row {
+                    display: flex;
+                    gap: 10px;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+
+                    .btn1 {
+                        display: flex;
+
+                        button,
+                        div {
+                            width: 50px;
+                            height: 50px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #fff;
+                            border: 0;
+                            color: #000;
+                        }
+
+                        button:hover {
+                            background-color: #44A79B;
+                        }
+                    }
+
+                    .btn2 {
+                        button {
+                            background-color: #008BD8;
+                            height: 50px;
+                            border: 0px;
+                            color: #fff;
+                            border-radius: 10px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            width: 160px;
+
+                            &:hover {
+                                background-color: #0075b5;
+                            }
+                        }
+                    }
+
+                    .btn3 {
+                        button {
+                            background-color: #2649A6;
+                            height: 50px;
+                            border: 0px;
+                            color: #fff;
+                            border-radius: 10px;
+                            padding-left: 30px;
+                            padding-right: 30px;
+                            width: 150px;
+
+                            &:hover {
+                                background-color: #133182;
+                            }
+                        }
+                    }
+                }
+
+                .wish-list-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #000;
+                    line-height: 21px;
+                    border: 0px;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+//common
+.section {
+    padding: 20px;
+
+    @media (min-width:768px) {
+        padding: 30px 40px;
+    }
+
+    @media (min-width:1200px) {
+        padding: 40px 60px;
+    }
+
+    @media (min-width:1440px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1280px;
+        margin: 0px auto;
+    }
+
+    .success-message {
+        margin-bottom: 15px;
+        color: #5ca31f;
+        background: #f1f9e9;
+        padding: 6px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+    .error-message {
+        margin-bottom: 15px;
+        color: rgb(224, 27, 27);
+        background: #f1f9e9;
+        padding: 6px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+    }
+}
+
+.book-details-wrapper-bg:before {
+    content: "";
+    position: absolute;
+    background: #dbf6f1 !important;
+    top: 150px;
+    left: 100px;
+    right: 0;
+    bottom: -60px;
+    max-width: 745px;
+    margin: 0px auto;
+    height: 540px;
+}
+
+
+
+.book-details-wrapper-sm {
+    display: none;
+}
+
+@media (max-width:1023px) {
+    .book-details-wrapper-sm {
+        display: block;
+    }
+
+    .book-details-wrapper-bg-sm {
+        background: #dbf6f1;
+        padding: 30px;
+
+        .image-wrapper {
+            display: flex;
+
+            img {
+                margin: 0px auto;
+                width: 100%;
+                max-width: 540px;
+            }
+        }
+
+        .book-details {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px auto;
+            max-width: 540px;
+
+            h1.title {
+                color: #343434;
+                font-size: 25px;
+                line-height: 36px;
+            }
+
+            .bottom-border-line {
+                border-top: 3px solid #44A79B;
+                width: 100px;
+            }
+
+            .book-status {
+                font-weight: 600;
+                margin-top: 10px;
+            }
+
+            .old-price {
+                color: #b5b5b5;
+                text-decoration: line-through;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 25px;
+                margin-top: 10px;
+            }
+
+            .new-price {
+                color: #44A79B;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 38px;
+                padding-bottom: 10px;
+            }
+
+            h6 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #343434;
+            }
+
+            .details-line {
+                font-size: 14px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+
+                table {
+                    width: 100%;
+                }
+
+                td {
+                    vertical-align: top;
+                }
+
+                .left {
+                    font-weight: 700;
+                    color: #212529;
+                    width: 40%;
+                }
+
+                .right {
+                    font-weight: 400;
+                    color: #212529;
+                    width: 60%;
+                }
+
+                div.right {
+                    width: 100% !important;
+                }
+
+            }
+
+            .btn-row {
+                display: flex;
+                gap: 10px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                @media (max-width:580px) {
+                    flex-direction: column;
+                }   
+
+                .btn1 {
+                    display: flex;
+                    margin: 0px auto;
+
+                    button,
+                    div {
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+                        border: 0;
+                        color: #000;
+                    }
+
+                    button:hover {
+                        background-color: #44A79B;
+                    }
+                }
+
+                .btn2 {
+                    margin: 0px auto;
+                    width: 80%;
+                    button {
+                        background-color: #008BD8;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        border-radius: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        width: 100%;
+
+                        &:hover {
+                            background-color: #0075b5;
+                        }
+                    }
+                }
+
+                .btn3 {
+                    margin: 0px auto;
+                    width: 80%;
+                    button {
+                        background-color: #2649A6;
+                        height: 50px;
+                        border: 0px;
+                        color: #fff;
+                        border-radius: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        width: 100%;
+
+                        &:hover {
+                            background-color: #133182;
+                        }
+                    }
+                }
+            }
+
+            .wish-list-btn {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #000;
+                line-height: 21px;
+                border: 0px;
+                background-color: transparent;
+                justify-content: center;
+            }
+        }
+    }
+}
