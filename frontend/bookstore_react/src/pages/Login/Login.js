@@ -191,7 +191,7 @@ const LoginPage = () => {
                                             </Input>
                                             <br />
                                             <br />
-                                            <Input iconPosition='left' placeholder='Enter Password' value={password} onChange={handlePasswordRegister}>
+                                            <Input iconPosition='left' type='password' placeholder='Enter Password' value={password} onChange={handlePasswordRegister}>
                                                 <Icon name='key' />
                                                 <input />
                                             </Input>
